@@ -1,5 +1,7 @@
 package ru.netology.domain;
 
+import ru.netology.manager.WallSearch;
+
 public class Post {
     private int id;
     private int ownerId;
@@ -9,6 +11,7 @@ public class Post {
     private int replyOwnerId;
     private int replyPostId;
     private boolean friendsOnly = true;
+    private WallSearch wallSearch;
     private String imageUrl;
     private String videoUrl;
     private CommentsInfo commentsInfo;
